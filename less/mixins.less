@@ -1,0 +1,29 @@
+.hide-text() {
+  text-indent: 1000%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.container() {
+    width: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    @media @tablet-width {
+        width: 620px;
+        padding: 0 40px;
+    }
+    
+    @media @desktop-width {
+        width: 940px;
+        padding: 0 130px;
+    }
+}
+
+.clearfix() {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

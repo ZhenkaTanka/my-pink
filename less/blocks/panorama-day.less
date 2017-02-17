@@ -1,0 +1,82 @@
+.panorama-day__photo {
+    text-align: center;
+    position: relative;
+}
+
+.panorama-day__title {
+    position: absolute;
+    right: 20px;
+}
+
+.panorama-day__wrapper {
+    .container();
+}
+
+.panorama-day__photo img {
+    width: 100%;
+    display: block;
+    
+}
+
+.panorama-day__title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    background-color: #d22856;
+}
+
+.panorama-day__reivew {
+    background-color: #f2f2f2;
+    
+    margin: 0;
+    margin-bottom: 50px;
+    
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    position: relative;
+}
+
+@media @tablet-width {
+    .panorama-day__photo {
+        margin-bottom: 20px;
+    }
+    .panorama-day__photo img {
+        width: auto;
+        height: 510px;
+        margin-left: 0%;
+    }
+    
+    .panorama-day__reivew {
+        padding-bottom: 10px;
+    }
+    
+    .panorama-day__like {
+        top: 20px;
+        right: 20px;
+        left: auto;
+    }
+    
+    .panorama-day__title {
+        top: 75px;
+        right: 40px;
+    }
+}
+
+@media @desktop-width {
+    .panorama-day__photo {
+       max-width: 1200px;
+        margin: auto;
+    }
+    
+    .panorama-day__title {
+        top: 25px;
+        right: 70px;
+
+    }
+}

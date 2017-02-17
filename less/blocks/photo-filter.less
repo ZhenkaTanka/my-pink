@@ -1,0 +1,62 @@
+.photo-filter {
+    background-color: #f2f2f2;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.photo-filter__wrapper {
+    .container();
+    
+    .clearfix();
+}
+
+@media @tablet-width {
+    .photo-filter {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .photo-filter__photo {
+        float: left;
+    }
+    
+    .photo-filter__user-panel {
+        float: right;
+        
+        width: 300px;
+        min-height: 200px;
+    }
+    
+    .photo-filter__buttons {
+        float: right;
+        
+        width: 300px;
+        min-height: 200px;
+    }
+}
+
+@media @desktop-width {
+    .photo-filter {
+        
+        
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .photo-filter__wrapper {
+        padding-left: 80px;
+        padding-right: 60px;
+        box-sizing: border-box;
+    }
+    
+    .photo-filter__user-panel {
+        width: 410px;
+    }
+    
+    .photo-filter__buttons {
+        width: 410px;
+    }
+}

@@ -1,0 +1,117 @@
+.inputs-text {
+    background-color: white;
+    
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    
+    margin: 0;
+    
+    border: none;
+}
+
+.input-text {
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-text__title {
+    display: block;
+    
+    padding: 0;
+    padding-left: 20px;
+}
+
+.input-text__input {
+    border: 2px solid #e5e5e5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: none;
+    
+}
+
+@media @tablet-width {
+    .inputs-text {
+        margin-top: 40px;
+    }
+    
+    .input-text {
+        display: table;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .input-text__title {
+        display: table-cell;
+        width: 1%;
+        padding-right: 20px;
+        padding-left: 0px;
+    }
+    
+    .input-text__input {
+        display: table-cell;
+        width: 99%;
+    }
+    
+    .inputs-text_cont-info {
+        border: 2px solid #e5e5e5;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 10px;
+    }
+    
+    .input-text__title_cont-info {
+        display: block;
+        position: absolute;
+        top: 70px;;
+        width: auto;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    
+    .input-text_cont-info {
+        margin-bottom: 65px; 
+    }
+    
+    .input-text__input_cont-info {
+        box-sizing: border-box;
+    }
+}
+
+@media @desktop-width {
+    .input-text__input {
+        box-sizing: border-box;
+    }
+    
+    .inputs-text_float-left {
+        float: left;
+        width: 470px;
+        margin-top: 0px;
+        padding-top: 10px;
+        padding-right: 20px;
+    }
+    
+    .inputs-text_cont-info {
+        .clearfix();
+    }
+    
+    .inputs-text_cont-info {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .input-text_cont-info {
+        width: 375px;
+        float: left;
+        margin-bottom: 50px;
+        
+        &:first-of-type {
+            margin-right: 65px;
+        }
+    }
+}

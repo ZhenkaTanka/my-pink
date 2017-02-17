@@ -1,0 +1,48 @@
+.inputs-textarea {    
+    width: auto;
+    padding-top: 90px;
+    
+    border: none;
+    text-align: center;
+    
+    position: relative;
+    
+}
+
+.inputs-textarea__legend {
+    top: 50px;
+}
+
+.inputs-textarea__input {
+    border: 2px solid #e5e5e5;
+    outline: none;
+    
+    resize: none;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    box-sizing: border-box;
+}
+
+@media @tablet-width {
+    .inputs-textarea {        
+        background-color: transparent;
+        border: 2px solid #e5e5e5;
+        box-sizing: border-box;
+        padding: 50px;
+        margin-top: 45px;
+    }
+    
+    .inputs-textarea__input {
+        width: 100%;
+    }
+}
+
+@media @desktop-width {
+    .inputs-textarea__input {
+        height: 125px;
+    }
+}

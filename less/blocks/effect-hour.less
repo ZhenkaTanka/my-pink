@@ -1,0 +1,62 @@
+.effect-hour {
+    padding-top: 55px;
+    padding-bottom: 120px;
+    display: none;
+}
+
+.effect-hour__wrapper {
+    .container();
+    position: relative;
+}
+
+.effect-hour__header {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.effect-hour__icon-clock {
+    position: absolute;
+    width: 240px;
+    height: 277px;
+    background-color: aqua;
+    top: 0px;
+    left: 40px;
+}
+
+.effect-hour__desc {
+    padding-left: 350px;
+    padding-top: 30px;
+}
+
+.effect-hour__title {
+    color: #283645;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.effect-hour__link {
+    color: #d22856;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+@media @tablet-width {
+    .effect-hour {
+        display: block;
+    }
+}
+
+@media @desktop-width {
+    .effect-hour {
+        background-color: #f2f2f2;
+    }
+    
+    .effect-hour__icon-clock {
+        left: 130px;
+    }
+}

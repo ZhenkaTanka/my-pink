@@ -1,0 +1,137 @@
+.prices-table {
+    
+}
+
+.prices-table__header {
+    background-color: #283645;
+}
+
+.prices-table__status {
+    fill: #232322;
+}
+
+.svg-no {
+    fill: #f25b26;
+    position: absolute;
+    right: 23px;
+}
+
+.svg-yes {
+    fill: #3dc644;
+    position: absolute;
+    right: 20px;
+}
+
+.prices-table__title {
+    display: block;
+}
+
+.prices-table__header {    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+    border: 2px solid #e5e5e5;
+    border-left-width: 0px;
+    box-sizing: border-box;
+}
+
+.prices-table td {    
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 2px solid #e5e5e5;
+    border-left-width: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@media @tablet-width {
+    .prices-table {
+        width: 160px;
+        text-align: center;
+    }
+    
+    .prices-table__header {
+        font-size: 16px;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    
+    .prices-table__title {
+        font-size: 16px !important; 
+        
+    }
+    
+    .prices-table__price {
+        font-size: 18px !important;
+    }
+    
+    .prices-table__value {
+        display: none;
+    }
+    
+    .prices-table td {
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+    
+    .svg-no {
+        left: 50%;
+        margin-left: -13px;
+        top: 50%;
+        margin-top: -13px;
+    }
+
+    .svg-yes {
+        left: 50%;
+        margin-left: -13px;
+        top: 50%;
+        margin-top: -13px;
+    }
+    
+    .prices-table__value_table {
+        display: inline-block; 
+    }
+    
+    .prices__item_table td {
+        box-sizing: border-box;
+        text-align: left;
+        padding-bottom: 11px;
+        padding-top: 11px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
+@media @desktop-width {
+    .prices-table {
+        width: 237px;
+        text-align: center;
+    }
+    
+    .prices-table__title {
+        font-size: 18px !important; 
+        
+    }
+    
+    .prices-table__price {
+        font-size: 24px !important;
+    }
+    
+    .prices-table__value_table {
+        font-size: 18px;
+    }
+    
+    .prices__item_table td {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+}

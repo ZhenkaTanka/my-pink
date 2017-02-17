@@ -1,0 +1,70 @@
+.reivews {
+    background-color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    
+    .container();
+}
+
+.reivew__item {
+    margin: 0;
+    padding: 0;
+    padding-top: 85px;
+    position: relative;
+    display: none;
+}
+
+.reivew__item:first-child {
+    display: block;
+}
+
+.reivews__toggles {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.reivews__author {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.reivews__author-name {
+    font-style: normal;
+    display: block;
+}
+
+.reivews__author-info {
+    display: none;
+    font-weight: 400;
+}
+
+@media @tablet-width {
+    .reivew__item {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    
+   .reivews__author-info {
+        display: inline-block;
+
+    }
+    
+    .reivews__author {
+        position: static;
+    }
+}
+
+@media @desktop-width {
+    .reivew__item {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    
+    .reivews__toggles {
+        display: none;
+    }
+}
