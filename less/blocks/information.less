@@ -1,41 +1,48 @@
 .information {
-    background: white;
+    background: #f2f2f2;
 }
 
-.information__header {
-    padding-left: 60px;
-    padding-right: 60px;
+.information__item-screen {
+    display: none;
+}
+
+.information__wrapper {
+    .container();
+    width: auto;
+}
+
+.information__header {    
+    background-color: white;
+    position: relative;
+    padding-top: 40px;
     padding-bottom: 30px;
     text-align: center;
     
-    .container();
-}
-
-.information__header p {
-    margin: 0;
-    margin-top: 35px;
+    p {
+        margin: 0;
+    }
+    
+    p:not(:first-child) {
+        margin-top: 30px;
+    }
 }
 
 .information__list {
     list-style: none;
     text-align: center;
-    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-
-    padding-top: 10px;
+    padding-top: 35px;
     overflow: hidden;
-    
-    .container();
 }
 
 .information__item {
-    
+    margin-bottom: 30px;   
 }
 
 .information__title {
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 7px;
 }
 
 .information__desc {
@@ -44,53 +51,127 @@
 }
 
 .information__screen {
-    margin-top: 45px;
-}
-
-.information__wrapper {
-    .container();
-}
-
-@media @tablet-width {
-    .information {
-    }
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/iphone-screen.png) no-repeat center;
+    background-size: contain;
+    width: 159px;
+    height: 400px;
+    margin-top: 15px;
+    margin-bottom: -80px;
     
+    img {
+        width: 139px;
+    }
+}
+
+@media @tablet-width {    
     .information__header {
         padding-top: 55px;
-    }
-    
-    .information__header p {
-        margin: 0;
+        
+        p:last-child {
+            margin-top: 5px;
+            padding-left: 130px;
+            padding-right: 130px;
+        }
     }
     
     .information__list {
         padding-left: 310px;
+        padding-bottom: 1px;
         box-sizing: border-box;
         position: relative;
         text-align: left;
+        overflow: visible;
+    }
+    
+    .information__item {
+        margin-bottom: 35px;
     }
     
     .information__screen {
+        align-items: flex-end;
+        background-position: top;
+        background-size: cover;
         position: absolute;
-        left: 40px;
-        bottom: -40px;
+        left: 0px;
+        top: -73px;
+        width: 270px;
+        height: 480px;
         
+        img {
+            width: 240px;
+        }
     }
 }
 
-@media @desktop-width {
-    .information {
-        background-color: #f2f2f2;
+@media @desktop-width {    
+    .information__screen {
+        display: none;
+    }
+    
+    .information__item-screen {
+        display: flex;
+        margin: auto;
+        align-items: flex-end;
+        justify-content: center;
+        background: url(/img/screens/screen-1.jpg) no-repeat center,
+            url(/img/iphone-screen.png) no-repeat top;
+        background-size: 166px, 190px;
+        background-position: center 47px, top;
+        height: 302px;
+        position: relative;
+        margin-bottom: 55px;
+        margin-top: -115px;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(/img/shadow.png) no-repeat top;
+            background-size: auto;
+            width: 300px;
+            height: 7px;
+            bottom: 0;
+            opacity: 0.3;
+        }
+        
+        &_two {
+            background: url(/img/screens/screen-2.jpg) no-repeat center 47px,
+            url(/img/iphone-screen.png) no-repeat top;
+            background-size: 166px, 190px;
+        }
+        
+        &_three {
+            background: url(/img/screens/screen-3.jpg) no-repeat center 47px,
+            url(/img/iphone-screen.png) no-repeat top;
+            background-size: 166px, 190px;
+        }
+    }
+    
+    .information__header {
+        padding-top: 75px;
+        
+        p:last-child {
+            display: inline-block;
+            width: 400px;
+        }
     }
     
     .information__list {
+        display: flex;
+        justify-content: space-between;
         padding: 0;
         text-align: center;
     }
     
     .information__item {
-        width: 300px;
-        
+        width: 240px;
         display: inline-block;
+    }
+    
+    .information__title {
+        margin-bottom: 30px;
     }
 }

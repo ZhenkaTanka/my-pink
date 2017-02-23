@@ -1,10 +1,12 @@
 .intro {
-    background: url(/img/bg-back-mobile@1x.jpg) no-repeat top;
-
+    background: #1d2631 url(/img/bg-back-mobile@1x.jpg) no-repeat top;
+    padding-top: 175px;
+    
 }
 
 .intro__wrapper {
     .container();
+    width: auto;
     position: relative;
 }
 
@@ -18,12 +20,24 @@
 }
 
 .intro__phone {
-    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -20px;
+    
+    img {
+        width: auto;
+        height: 287px;
+    }
 }
 
 @media @tablet-width {
     .intro {
         background: url(/img/bg-back-tablet@1x.jpg) no-repeat top;
+        padding-top: 180px;
+    }
+    
+    .intro__wrapper {
+        width: auto;
     }
     
     .intro__title {
@@ -31,10 +45,31 @@
         font-weight: 300 !important;
         line-height: 65px;
     }
+    
+    .intro__phone {
+        justify-content: flex-end;
+        
+        img {
+            height: 547px;
+        }
+    }
 }
 
 @media @desktop-width {
     .intro {
         background: url(/img/bg-back-desktop@1x.jpg) no-repeat top;
+        padding-top: 205px;
+    }
+    
+    .intro__wrapper {
+        width: 940px;
+    }
+    
+    .intro__phone {
+        padding-right: 40px;
+        
+        img {
+            height: 644px;
+        }
     }
 }

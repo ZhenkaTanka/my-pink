@@ -1,15 +1,18 @@
 .effect-hour {
-    padding-top: 55px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 70px;
     display: none;
+    background-color: white;
 }
 
 .effect-hour__wrapper {
     .container();
-    position: relative;
+    width: auto;
+    display: flex;
 }
 
 .effect-hour__header {
+    display: block;
     color: black;
     font-size: 30px;
     font-weight: 700;
@@ -17,16 +20,12 @@
 }
 
 .effect-hour__icon-clock {
-    position: absolute;
     width: 240px;
     height: 277px;
-    background-color: aqua;
-    top: 0px;
-    left: 40px;
+    margin-right: 70px;
 }
 
 .effect-hour__desc {
-    padding-left: 350px;
     padding-top: 30px;
 }
 
@@ -35,6 +34,8 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .effect-hour__link {
@@ -54,9 +55,31 @@
 @media @desktop-width {
     .effect-hour {
         background-color: #f2f2f2;
+        padding-top: 25px;
+        padding-bottom: 65px;
+    }
+    
+    .effect-hour__br {
+        display: none;
     }
     
     .effect-hour__icon-clock {
-        left: 130px;
+        height: 345px;
+        width: 300px;
+    }
+    
+    .effect-hour__desc {
+        max-width: 570px;
+        padding-top: 80px;
+    }
+    
+    .effect-hour__title {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .effect-hour__link {
+        font-size: 18px;
     }
 }

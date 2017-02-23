@@ -1,11 +1,11 @@
 .contacts {
-    .container();
-    
     background-color: white;
     padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
     text-align: center;    
+}
+
+.contacts__wrapper {
+    .container();
 }
 
 .contacts__title {
@@ -23,35 +23,51 @@
     padding-top: 5px;
 }
 
-.contacts__map {
-    margin-top: 30px;
-    display: block;
-    
+.contacts__triangle {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
 }
+
+.contacts__triangle-icon {
+    fill: white;
+}
+
+.contacts__map {
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    
+    iframe {
+        width: 100%;
+    }
+}
+
 
 @media @tablet-width {
     .contacts {
         padding-top: 43px;
     }
     
-    .contacts__title {
-        font-size: 40px !important;
-        line-height: 40px !important;
+    .contacts__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
     
-    .contacts__information {
-        float: left;
-        
-        &:first-of-type {
-            margin-left: 50px;
-            margin-right: 90px;
-        }
-        
-        &:nth-of-type(3) {
-            width: 100%;
-            margin: auto 0; 
-            margin-bottom: 20px;
-        }
+    .contacts__title {
+        flex-basis: 100%;
+    }
+    
+    .contacts__information:last-child {
+        margin-left: auto;
+        margin-right: auto;
+        width: 220px;
+    }
+    
+    .contacts__map {
+        height: 380px;
     }
 }
 
@@ -61,35 +77,29 @@
         position: relative;
         
     }
+
+    .contacts__information {
+        margin: 0;
+        padding-top: 35px;
+        padding-bottom: 10px;
     
-    .contacts__title {
-        font-size: 50px !important;
-        line-height: 50px !important;
     }
     
-    .contacts__information {
-        float: right;
-        margin-right: 50px;
-        
-        &:first-of-type {
-            float: left;
-            margin-left: 50px;
-            margin-right: 0px;
-        }
-        
-        &:nth-of-type(3) {
-            position: absolute;
-            width: 200px;
-            left: 50%;
-            margin-left: -100px;
-        }
+    .contacts__information:nth-of-type(2) {
+        order: 2;
+    }
+    
+    .contacts__information:last-child {
+        margin: 0;
     }
     
     .contacts__information p {
         padding-top: 20px;
     }
     
-    .contacts__map {
-        margin-top: 170px;
+    .contacts__triangle {
+        width: 100%;
+        left: 50%;
+        margin-left: -50%;
     }
 }

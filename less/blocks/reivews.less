@@ -1,35 +1,38 @@
 .reivews {
     background-color: white;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 20px;
-    padding-right: 20px;
     text-align: center;
-    
+}
+
+.reivews__wrapper {
     .container();
+    width: auto;
+}
+
+.reivews__list {
+    display: flex;
 }
 
 .reivew__item {
+    display: flex;
     margin: 0;
     padding: 0;
-    padding-top: 85px;
-    position: relative;
-    display: none;
+    padding-top: 45px;
+    flex-direction: column;
 }
 
-.reivew__item:first-child {
-    display: block;
+.reivews__text {
+    margin: 0px;
+    margin-top: 10px;
 }
 
 .reivews__toggles {
-    padding-top: 20px;
-    padding-bottom: 5px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .reivews__author {
-    position: absolute;
-    top: 50px;
     width: 100%;
+    order: -1;
 }
 
 .reivews__author-name {
@@ -42,15 +45,29 @@
     font-weight: 400;
 }
 
+.reivews__triangle {
+    fill: white;
+}
+
 @media @tablet-width {
     .reivew__item {
         padding-top: 10px;
         padding-bottom: 0px;
     }
     
+    .reivews__text {
+        margin: 0;
+        font-size: 18px;
+        
+    }
+    
+    .reivews__author {
+        margin-top: 30px;
+        order: 1;
+    }
+    
    .reivews__author-info {
         display: inline-block;
-
     }
     
     .reivews__author {
@@ -59,12 +76,33 @@
 }
 
 @media @desktop-width {
-    .reivew__item {
-        padding-top: 80px;
-        padding-bottom: 40px;
+    .reivews {
+        padding-top: 75px;
     }
     
-    .reivews__toggles {
-        display: none;
+    .reivews::before {
+        content: "";
+        display: block;
+        margin: auto;
+        width: 79px;
+        height: 63px;
+        background: url(/img/quotes.png) no-repeat center;
+    }
+    
+    .reivew__item {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    
+    .reivews__control {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        margin-top: -90px;
+        left: 7px;
+        right: 7px;
     }
 }

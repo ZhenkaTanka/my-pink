@@ -1,22 +1,55 @@
 .page-header {
     background-color: #283645;
-
 }
 
 .page-header__top {
-    .clearfix();
+    .container();
+    width: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.page-header__logo {
-     float: left;
+@media @tablet-width {
+    .page-header__top {
+        width: auto;
+        padding-top: 40px;
+        padding-bottom: 27px;
+    }
 }
 
 @media @desktop-width {
     .page-header {
         background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        width: 100%;
     }
     
     .page-header__top {
-        float: left;
+        width: auto;
+        border: none;
+        padding: 0;
+        margin: 0;
+        
+        flex-basis: 300px;
+    }
+    
+    .page-header__logo {
+        margin-top: 7px;
+        
+        &:hover path {
+            fill: #d22856;
+        }
+
+        &:active path {
+            fill: white;
+            opacity: 0.3;
+        }
     }
 }

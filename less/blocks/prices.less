@@ -3,13 +3,15 @@
     margin: 0;
     padding: 0;
     padding-top: 65px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+    overflow: hidden;
     
     .clearfix();
 }
 
 .prices__wrapper {
     .container();
+
 }
 
 
@@ -20,12 +22,11 @@
 
 .prices__list {
     width: 400%;
-    
     list-style: none;
     margin: 0;
     padding: 0;
-
     margin-left: -230px;
+    margin-bottom: 45px;
 }
 
 .prices__item {
@@ -42,10 +43,52 @@
     display: none;
 }
 
+.prices-table__header {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.prices-table__header_hit {
+    
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100px;
+        background-color: transparent;
+        top: -20px;
+        left: 0;
+        
+        border-right: 25px solid #d22856;
+        transform: rotate(40deg);
+    }
+    
+    &::before {
+        content: "ХИТ";
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        z-index: 2;
+        transform: rotate(-50deg);
+    }
+}
+
+
 @media @tablet-width {
     .prices__list {
-        width: 200%;
+        width: 100%;
         margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: visible;
+        margin-bottom: 20px;
     }
     
     
@@ -57,7 +100,6 @@
     .prices__item_table {
         margin-bottom: 0px;
         display: block;
-        margin-top: 82px;
         border-left: 2px solid #e5e5e5;
     }
     

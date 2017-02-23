@@ -1,23 +1,67 @@
-.main-menu__toggle {
-    width: 50px;
-    height: 25px;
-    border: none;
-    background-color: transparent;
-    background: url(/img/icon-menu-burger.svg) no-repeat;
-    .hide-text();
-}
-
 .main-menu {
-    .container();
+    
+}
+
+.main-menu__toggle-icon {
+    width: 24px;
+    fill: white; 
 }
 
 .main-menu__toggle {
-    float: right;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    
+    &:hover .main-menu__toggle-icon {
+        fill: #d22856;
+    }
+    
+    &:active .main-menu__toggle-icon{
+        opacity: 0.3;
+    }
 }
 
-@media @desktop-width {  
+@media @only-mobile {    
+    .main-menu__toggle_open {
+        display: block;
+    }
+    
+    .main-menu__toggle_close {
+        display: none;
+    }
+
+    .main-menu_close {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        
+        .menu-list {
+            display: none;
+        }
+
+        .main-menu__toggle_open {
+            display: none;
+        }
+
+        .main-menu__toggle_close {
+            display: block;
+        }
+    }
+}
+
+
+@media @desktop-width {      
     .main-menu {
-        .clearfix();
+        .container();
+        width: auto;
+    }
+    
+    .main-menu__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .main-menu__toggle {

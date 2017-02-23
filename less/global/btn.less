@@ -1,9 +1,21 @@
 .btn {
     border-radius: 30px;
     border: 3px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #eb2f62;
+}
+
+.btn:active {
+    color: #edb4c4;
 }
 
 .download__btn {
+    width: 280px;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -24,4 +36,10 @@
     color: #283645;
     border-color: #283645;
     opacity: 0.1;
+}
+
+@media @tablet-width {
+    .download__btn {
+        width: 290px;
+    }
 }

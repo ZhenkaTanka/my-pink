@@ -1,14 +1,28 @@
 .download {
-    background-color: #1d2631;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
     text-align: center;
 }
 
 .download__title {
     display: none;
+}
+
+.download__platforms {
+    width: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+    p {
+        margin: 0;
+        margin-top: 30px;
+    }
 }
 
 @media @tablet-width {
@@ -17,11 +31,56 @@
         background-color: transparent;
         position: absolute;
         top: 0%;
-        left: 20px;
+        left: 40px;
+        padding-top: 20px;
     }
     
     .download__title {
+        width: 230px;
         display: block;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 50px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    
+    .download__platforms {
+        width: 230px;
+        margin-top: 50px;
+        position: relative;
+        
+        p {
+            position: absolute;
+            width: 295px;
+            top: 60px;
+        }
+    }
+    
+    .download__logo-andoroid {
+        opacity: 0.4;
+    }
+}
+
+@media @desktop-width {
+    .download {
+        left: 130px;
+    }
+    
+    .download__title {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 55px;
+    }
+    
+    .download__platforms {
+        margin-top: 65px;
+        
+        
+    }
+    
+    .download__logo-andoroid {
+        opacity: 1;
     }
 }
 
