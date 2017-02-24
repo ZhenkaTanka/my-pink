@@ -1,6 +1,6 @@
 .like {
+    display: flex;
     color: #d22856;
-    position: absolute;
 }
 
 .like__like {
@@ -8,31 +8,35 @@
 }
 
 .like__count {
-    font-size: 14px;
+    padding-left: 5px;
 }
 
-@media @tablet-width {
-    .like {
-        
-        bottom: 20px;
-        left: 20px;
+.like__icon {
+    padding-top: 2px;
+    & path {
+        fill: #d22856;
     }
+}
+
+@media @tablet-width {    
+    .like {   }
     
     .like__icon_post {
-        display: block;
-        background-color: black;
-        width: 15px;
-        height: 15px;
-        left: 240px;
-        top: 50%;
-        margin-top: -10px;
-        position: absolute;
+        padding-top: 2px;
     }
     
     .like__like_post {
         padding-left: 0px;
     }
     
+    .like__like {
+        padding: 0;
+    }
+    
+    .like__icon {
+        padding-left: 17px;
+        order: 1;
+    }
     
 }
 
