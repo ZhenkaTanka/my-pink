@@ -313,17 +313,24 @@ th {
   background-color: white;
   padding: 0;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 50px;
   text-align: center;
 }
 @media (min-width: 700px) {
   .section-title {
     font-size: 18px !important;
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 70px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-title {
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 90px;
   }
 }
 .contacts {
@@ -667,7 +674,7 @@ th {
         align-items: flex-end;
     -ms-flex-pack: center;
         justify-content: center;
-    background: url(../img/screens/screen-1.jpg) no-repeat center, url(../img/iphone-screen.png) no-repeat top;
+    background: url(/img/screens/screen-1.jpg) no-repeat center, url(/img/iphone-screen.png) no-repeat top;
     background-size: 166px, 190px;
     background-position: center 47px, top;
     height: 302px;
@@ -678,7 +685,7 @@ th {
   .information__item-screen::after {
     content: "";
     position: absolute;
-    background: url(../img/shadow.png) no-repeat top;
+    background: url(/img/shadow.png) no-repeat top;
     background-size: auto;
     width: 300px;
     height: 7px;
@@ -686,11 +693,11 @@ th {
     opacity: 0.3;
   }
   .information__item-screen_two {
-    background: url(../img/screens/screen-2.jpg) no-repeat center 47px, url(../img/iphone-screen.png) no-repeat top;
+    background: url(/img/screens/screen-2.jpg) no-repeat center 47px, url(/img/iphone-screen.png) no-repeat top;
     background-size: 166px, 190px;
   }
   .information__item-screen_three {
-    background: url(../img/screens/screen-3.jpg) no-repeat center 47px, url(../img/iphone-screen.png) no-repeat top;
+    background: url(/img/screens/screen-3.jpg) no-repeat center 47px, url(/img/iphone-screen.png) no-repeat top;
     background-size: 166px, 190px;
   }
   .information__header {
@@ -718,6 +725,9 @@ th {
 }
 .intro {
   background: #1d2631 url(../img/bg-back-mobile@1x.jpg) no-repeat top;
+  padding-top: 65px;
+}
+.intro_index {
   padding-top: 175px;
 }
 .intro__wrapper {
@@ -741,7 +751,7 @@ th {
 }
 .intro__title {
   margin: 0;
-  padding-top: 100px;
+  padding-top: 45px;
   padding-bottom: 80px;
   padding-left: 10px;
   padding-right: 10px;
@@ -761,15 +771,17 @@ th {
 @media (min-width: 700px) {
   .intro {
     background: url(../img/bg-back-tablet@1x.jpg) no-repeat top;
+    padding-top: 110px;
+  }
+  .intro_index {
     padding-top: 180px;
   }
   .intro__wrapper {
     width: auto;
   }
   .intro__title {
-    font-size: 50px !important;
-    font-weight: 300 !important;
-    line-height: 65px;
+    padding-top: 65px;
+    padding-bottom: 135px;
   }
   .intro__phone {
     -ms-flex-pack: end;
@@ -782,6 +794,9 @@ th {
 @media (min-width: 1200px) {
   .intro {
     background: url(../img/bg-back-desktop@1x.jpg) no-repeat top;
+    padding-top: 80px;
+  }
+  .intro_index {
     padding-top: 205px;
   }
   .intro__wrapper {
@@ -793,34 +808,44 @@ th {
   .intro__phone img {
     height: 644px;
   }
+  .intro__title {
+    padding-top: 85px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 95px;
+  }
 }
 .like {
+  display: -ms-flexbox;
+  display: flex;
   color: #d22856;
-  position: absolute;
 }
 .like__like {
   padding-left: 20px;
 }
 .like__count {
-  font-size: 14px;
+  padding-left: 5px;
+}
+.like__icon {
+  padding-top: 2px;
+}
+.like__icon path {
+  fill: #d22856;
 }
 @media (min-width: 700px) {
-  .like {
-    bottom: 20px;
-    left: 20px;
-  }
   .like__icon_post {
-    display: block;
-    background-color: black;
-    width: 15px;
-    height: 15px;
-    left: 240px;
-    top: 50%;
-    margin-top: -10px;
-    position: absolute;
+    padding-top: 2px;
   }
   .like__like_post {
     padding-left: 0px;
+  }
+  .like__like {
+    padding: 0;
+  }
+  .like__icon {
+    padding-left: 17px;
+    -ms-flex-order: 1;
+        order: 1;
   }
 }
 .main-menu__toggle-icon {
@@ -1115,11 +1140,17 @@ th {
 .panorama-day__title {
   position: absolute;
   right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #d22856;
 }
 .panorama-day__wrapper {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+  width: auto;
 }
 @media (min-width: 700px) {
   .panorama-day__wrapper {
@@ -1137,50 +1168,58 @@ th {
   width: 100%;
   display: block;
 }
-.panorama-day__title {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #d22856;
+.panorama-day__desc {
+  margin: 0;
+  margin-bottom: 5px;
 }
 .panorama-day__reivew {
   background-color: #f2f2f2;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding: 0;
   padding-top: 20px;
-  padding-bottom: 45px;
+  padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  position: relative;
 }
 @media (min-width: 700px) {
   .panorama-day__photo {
-    margin-bottom: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    overflow: hidden;
   }
   .panorama-day__photo img {
     width: auto;
     height: 510px;
-    margin-left: 0%;
-  }
-  .panorama-day__reivew {
-    padding-bottom: 10px;
-  }
-  .panorama-day__like {
-    top: 20px;
-    right: 20px;
-    left: auto;
   }
   .panorama-day__title {
     top: 75px;
     right: 40px;
   }
+  .panorama-day__reivew {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .panorama-day__like {
+    -ms-flex-order: 1;
+        order: 1;
+    margin-left: auto;
+  }
+  .panorama-day__desc {
+    -ms-flex-order: 2;
+        order: 2;
+  }
 }
 @media (min-width: 1200px) {
-  .panorama-day__photo {
-    max-width: 1200px;
-    margin: auto;
+  .panorama-day__photo img {
+    width: 100%;
+    height: 100%;
   }
   .panorama-day__title {
     top: 25px;
@@ -1260,6 +1299,7 @@ th {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+  width: auto;
 }
 @media (min-width: 700px) {
   .photolist__header {
@@ -1276,41 +1316,37 @@ th {
 .photolist__post {
   margin: 0;
   margin-bottom: 20px;
-}
-.photolist__post:last-of-type {
-  margin-bottom: 0;
-}
-@media (min-width: 700px) {
-  .photolist__post:nth-of-type(odd) {
-    margin-right: 20px;
-  }
-  .photolist__post:nth-of-type(odd):nth-last-child(2) {
-    margin-bottom: 0px;
-  }
+  background-color: #f2f2f2;
 }
 @media (min-width: 1200px) {
-  .photolist__post {
-    margin-right: 20px;
+  .photolist__title {
+    padding-left: 150px;
+    padding-right: 150px;
   }
-  .photolist__post:nth-of-type(3n+3) {
-    margin-right: 0;
-  }
-  .photolist__post:nth-last-child(3) {
-    margin-bottom: 0px;
-  }
+}
+.post__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .post__photo {
-  text-align: center;
   overflow: hidden;
-  width: 280px;
   height: 180px;
-  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .post__photo img {
-  width: 280px;
-  position: absolute;
-  top: -50%;
-  left: 0;
+  width: 100%;
 }
 .post__title {
   padding-top: 10px;
@@ -1319,45 +1355,29 @@ th {
   padding-right: 15px;
   background-color: #d22856;
 }
-.post__reivew {
-  background-color: #f2f2f2;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 45px;
-  padding-left: 20px;
-  padding-right: 20px;
-  position: relative;
-  width: 280px;
-  box-sizing: border-box;
-}
 .post__desc {
-  margin-top: 0;
+  margin: 0;
 }
 @media (min-width: 700px) {
   .post {
-    display: inline-block;
-    vertical-align: top;
+    height: auto;
+  }
+  .post__wrapper {
+    height: 155px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
   }
   .post__photo {
     width: 300px;
     height: 300px;
   }
-  .post__photo img {
-    width: 300px;
-    top: -25%;
-  }
   .post__reivew {
-    width: 300px;
-    height: 155px;
-    box-sizing: border-box;
+    width: 240px;
   }
 }
 @media (min-width: 1200px) {
   .post__photo {
     height: 400px;
-  }
-  .post__photo img {
-    top: 0%;
   }
 }
 .prices {
@@ -1669,7 +1689,7 @@ th {
     margin: auto;
     width: 79px;
     height: 63px;
-    background: url(../img/quotes.png) no-repeat center;
+    background: url(/img/quotes.png) no-repeat center;
   }
   .reivew__item {
     padding-top: 50px;
@@ -1851,7 +1871,8 @@ th {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
-  font-size: 0px;
+  width: auto;
+  padding-bottom: 1px;
 }
 @media (min-width: 700px) {
   .wrapper {
@@ -1863,6 +1884,16 @@ th {
   .wrapper {
     width: 940px;
     padding: 0 130px;
+  }
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
 }
 .inputs-legend {
@@ -2223,6 +2254,7 @@ body {
   color: white;
   font-size: 24px;
   font-weight: 300;
+  line-height: 30px;
 }
 .download {
   color: white;
@@ -2295,7 +2327,7 @@ body {
 .panorama-day__title {
   color: white;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
 }
@@ -2313,12 +2345,18 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
+.like {
+  text-decoration: none;
+}
 .like__like {
   color: #d22856;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+}
+.like__count {
+  font-size: 12px;
 }
 .post__author {
   font-size: 14px;
@@ -2419,6 +2457,11 @@ body {
     font-size: 40px;
     line-height: 40px;
   }
+  .intro__title {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 65px;
+  }
 }
 @media (min-width: 1200px) {
   .information__title {
@@ -2431,6 +2474,10 @@ body {
   .contacts__title {
     font-size: 50px;
     line-height: 50px;
+  }
+  .menu-list__link {
+    font-weight: 400;
+    text-transform: capitalize;
   }
 }
 main {

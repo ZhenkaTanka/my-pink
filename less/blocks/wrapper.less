@@ -1,5 +1,13 @@
 .wrapper {
     .container();
-    
-    font-size: 0px;
+    width: auto;
+    padding-bottom: 1px;
+}
+
+@media @tablet-width {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
