@@ -3,6 +3,8 @@
     border: 3px solid white;
     padding-top: 15px;
     padding-bottom: 15px;
+    outline: none;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -30,16 +32,47 @@
     font-weight: 700;
     font-size: 18px;
     background-color: transparent;
+    margin-bottom: 10px;
+    
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    
+    &:hover {
+        background-color: #d22856;
+        color: white;
+    }
+    
+    &:active {
+        color: #e06989;
+    }
 }
 
 .photo-filter__btn_disabled {
     color: #283645;
     border-color: #283645;
     opacity: 0.1;
+    
+    &:hover {
+        background-color: transparent;
+        color: black;
+        opacity: 0.3;
+    }
+    
+    &:active {
+        background-color: #283645;
+        color: #b5b9be;
+    }
 }
 
 @media @tablet-width {
     .download__btn {
         width: 290px;
+    }
+}
+
+@media @desktop-width {
+    .photo-filter__btn {
+        margin: 0;
     }
 }
