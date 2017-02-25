@@ -214,20 +214,48 @@
                     <div class="photo-filter__photo">
                         <img src="img/photo-7-mobile@1x.jpg" alt="Ваша фотография">
                     </div>
-                    <div class="photo-filter__user-panel">
-                        <i class="photo-filter__icon photo-filter__icon_pruning">Обрезка</i>
-                        <i class="photo-filter__icon photo-filter__icon_fill">Заливка</i>
-                        <i class="photo-filter__icon photo-filter__icon_light">Освещение</i> 
-                    </div>
-                    <div class="photo-filter__buttons">
-                        <button class="btn photo-filter__btn" type="submit">Запостить</button>
-                        <button class="btn photo-filter__btn photo-filter__btn_disabled" type="reset" disabled>Отмена</button>
+                    <div class="photo-filter__container">
+                        <div class="photo-filter__user-panel">
+                           <div class="photo-filter__crop">
+                               <i class="photo-filter__icon photo-filter__icon_crop">
+                             <?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48h-48z" fill="none"/><path d="M34 30h4v-16c0-2.21-1.79-4-4-4h-16v4h16v16zm-20 4v-32h-4v8h-8v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4h-32z"/></svg>    
+                            </i>
+                                <div class="photo-filter__line  photo-filter__line_crop">
+                                    <div class="photo-filter__line-circul"></div>
+                                </div>
+                           </div>
+
+                            <div class="photo-filter__fill">
+                                <i class="photo-filter__icon photo-filter__icon_fill">
+                                <?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48h-48z" fill="none"/><path d="M33.12 17.88l-17.88-17.88-2.83 2.83 4.76 4.76-10.29 10.29c-1.17 1.17-1.17 3.07 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11c1.17-1.17 1.17-3.07 0-4.24zm-22.71 2.12l9.59-9.58 9.59 9.58h-19.18zm27.59 3s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7z"/><path d="M0 40h48v8h-48z" fill-opacity=".36"/></svg>
+                            </i>
+                                <div class="photo-filter__line  photo-filter__line_fill">
+                                    <div class="photo-filter__line-circul"></div>
+                                </div>
+                            </div>
+
+                            <div class="photo-filter__contrast">
+                                <i class="photo-filter__icon photo-filter__icon_light">
+                                <?xml version="1.0" ?><svg baseProfile="tiny" height="24px" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_1"><g><path d="M12,4c-4.418,0-8,3.582-8,8s3.582,8,8,8s8-3.582,8-8S16.418,4,12,4z M12,18c-3.314,0-6-2.686-6-6s2.686-6,6-6s6,2.686,6,6    S15.314,18,12,18z"/><path d="M12,7v10c2.757,0,5-2.243,5-5S14.757,7,12,7z"/></g></g></svg>
+                            </i>
+                                <div class="photo-filter__line  photo-filter__line_contrast">
+                                    <div class="photo-filter__line-circul"></div>
+                                </div>
+                            </div>
+                            <div class="photo-filter__line  photo-filter__line_mobile">
+                                    <div class="photo-filter__line-circul"></div>
+                            </div>
+                        </div>
+                        <div class="photo-filter__buttons">
+                            <button class="btn photo-filter__btn" type="submit">Запостить</button>
+                            <button class="btn photo-filter__btn photo-filter__btn_disabled" type="reset">Отмена</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="page-footer index-footer">
+    <footer class="page-footer">
         <div class="page-footer__wrapper">
             <p class="page-footer__logo">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">

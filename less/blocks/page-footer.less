@@ -29,8 +29,6 @@
 
 .page-footer__social {
     margin: 0;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 .social-svg {
@@ -54,6 +52,20 @@
     display: none;
 }
 
+@media @only-mobile-two {
+    .page-footer__wrapper {
+        flex-flow: column wrap;
+    }
+    
+    .page-footer__social {
+        margin-top: 40px;
+    }
+    
+    .page-footer__copyright {
+        margin-top: 40px;
+    }
+}
+
 @media @tablet-width {    
     .index-footer {
         display: block;
@@ -63,6 +75,7 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
+    
 }
 
 @media @desktop-width {
