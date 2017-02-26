@@ -2,7 +2,6 @@
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    
     position: absolute;
     top: 35px;
     left: 5px;
@@ -11,8 +10,16 @@
     box-sizing: border-box;
 }
 
+.inputs-legend_mobile {
+    display: none;
+}
+
 @media @tablet-width {
     .inputs-legend {
         position: static;
+    }
+    
+    .inputs-legend_mobile {
+        display: block;
     }
 }
