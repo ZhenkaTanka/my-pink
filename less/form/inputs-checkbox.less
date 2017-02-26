@@ -1,25 +1,70 @@
-.input-checkbox__input {
-    display: none;
-}
-
 .inputs-checkbox {
     background-color: #f2f2f2;
-    
     border: none;
-    
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    
     position: relative;
     margin: 0;
 }
 
 .input-checkbox {
     display: block;
-    padding-left: 70px;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
+    display: flex;
+}
+
+.input-checkbox__input {
+    display: none;
+}
+
+.inputs-checkbox_mobile-order-two {
+    order: -3;
+    
+    .inputs-legend {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.input-checkbox__icon {
+    width: 39px;
+    height: 39px;
+    background-color: white;
+    margin-right: 25px;
+    flex-basis: 39px;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+    &:hover {
+        border-color: black;
+    }
+    
+    &:active {
+        border-color: #d22856;
+    }
+    
+    &::after {
+        content: "";
+        
+        border-color: transparent;
+    }
+}
+
+.input-checkbox__input:checked ~ .input-checkbox__icon::after {
+    width: 20px;
+    height: 10px;
+    border: 2px solid red;
+    border-top: none;
+    border-right: none;
+    display: inline-flex;
+    transform: rotate(-50deg);
+    margin-top: 9px;
+    transition: all 0.1s ease;
 }
 
 @media @tablet-width {
@@ -33,15 +78,23 @@
         padding-right: 60px;
         font-size: 0px;
     }
+    
+    .inputs-checkbox_mobile-order-two {
+        order: 0;
+        flex-basis: 100%;
+    }
 }
 
 @media @desktop-width {
+    .inputs-checkbox__flex-wrapper {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
     .input-checkbox {
-        display: inline-block;
-        width: 270px;
         box-sizing: border-box;        
-        &:nth-of-type(3n+3) {
-            
-        }
     }
 }
