@@ -533,7 +533,6 @@ th {
     position: relative;
   }
   .download__platforms p {
-    position: absolute;
     width: 295px;
     top: 60px;
   }
@@ -688,7 +687,6 @@ th {
   }
   .information__item-screen::after {
     content: "";
-    position: absolute;
     background: url(../img/shadow.png) no-repeat top;
     background-size: auto;
     width: 300px;
@@ -823,7 +821,7 @@ th {
   color: #d22856;
 }
 .like__like {
-  padding-left: 20px;
+  padding-left: 15px;
 }
 .like__count {
   padding-left: 5px;
@@ -848,6 +846,12 @@ th {
     padding-left: 17px;
     -ms-flex-order: 1;
         order: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .like__icon_post {
+    padding-top: 0px;
+    padding-bottom: 5px;
   }
 }
 .main-menu__toggle-icon {
@@ -2385,6 +2389,9 @@ th {
   }
   .inputs-text_mobile-order-one .input-text {
     margin: 0;
+  }
+  .inputs-text_mobile-order-one .input-text__flex-wrapper {
+    min-height: 294px;
   }
   .input-text__flex-wrapper {
     height: 100%;
