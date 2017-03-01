@@ -2403,6 +2403,8 @@ th {
         flex-wrap: wrap;
     -ms-flex-line-pack: justify;
         align-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
   .inputs-text_cont-info {
     width: 100%;
