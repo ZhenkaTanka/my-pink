@@ -656,12 +656,14 @@ th {
     background-size: cover;
     position: absolute;
     left: 0px;
-    top: -73px;
+    top: -69px;
     width: 270px;
     height: 480px;
   }
-  .information__screen img {
-    width: 240px;
+  .information__screen picture img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
   }
 }
 @media (min-width: 1200px) {
@@ -779,7 +781,8 @@ th {
 }
 @media (min-width: 700px) {
   .intro {
-    background: url(../img/bg-back-tablet@1x.jpg) no-repeat top;
+    background: url(../img/bg-back-tablet@1x.jpg) no-repeat bottom;
+    background-size: cover;
     padding-top: 110px;
   }
   .intro_index {
@@ -796,8 +799,9 @@ th {
     -ms-flex-pack: end;
         justify-content: flex-end;
   }
-  .intro__phone img {
+  .intro__phone picture img {
     height: 547px;
+    vertical-align: bottom;
   }
 }
 @media (min-width: 700px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 700px) and (min-resolution: 1.5dppx) {
@@ -807,7 +811,7 @@ th {
 }
 @media (min-width: 1200px) {
   .intro {
-    background: url(../img/bg-back-desktop@1x.jpg) no-repeat top;
+    background: url(../img/bg-back-desktop@1x.jpg) no-repeat bottom;
     padding-top: 80px;
   }
   .intro_index {
@@ -817,10 +821,12 @@ th {
     width: 940px;
   }
   .intro__phone {
-    padding-right: 40px;
+    margin-left: auto;
   }
-  .intro__phone img {
-    height: 644px;
+  .intro__phone picture img {
+    min-width: 100%;
+    height: auto;
+    vertical-align: bottom;
   }
   .intro__title {
     padding-top: 85px;
@@ -1739,6 +1745,7 @@ th {
   box-sizing: border-box;
 }
 .prices-table td {
+  height: 82px;
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1748,6 +1755,12 @@ th {
   border-left-width: 0px;
   box-sizing: border-box;
   position: relative;
+}
+.prices-table td img {
+  height: 27px;
+  width: auto;
+  position: absolute;
+  right: 20px;
 }
 @media (min-width: 700px) {
   .prices-table {
@@ -1773,6 +1786,9 @@ th {
   .prices-table td {
     padding-top: 23px;
     padding-bottom: 23px;
+  }
+  .prices-table td img {
+    position: static;
   }
   .svg-no {
     left: 50%;
