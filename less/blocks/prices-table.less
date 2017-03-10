@@ -38,6 +38,7 @@
 }
 
 .prices-table td {    
+    height: 82px;
     background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -47,6 +48,13 @@
     border-left-width: 0px;
     box-sizing: border-box;
     position: relative;
+    
+    img {
+        height: 27px;
+        width: auto;
+        position: absolute;
+        right: 20px;
+    }
 }
 
 @media @tablet-width {
@@ -80,6 +88,10 @@
     .prices-table td {
         padding-top: 23px;
         padding-bottom: 23px;
+        
+        img {
+            position: static;
+        }
     }
     
     .svg-no {

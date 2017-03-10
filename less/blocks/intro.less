@@ -33,12 +33,14 @@
     }
 }
 
+
 @media @tablet-width {
     .intro {
-        background: url(../img/bg-back-tablet@1x.jpg) no-repeat top;
+        background: url(../img/bg-back-tablet@1x.jpg) no-repeat bottom;
         @media @retina {
             background-image: url(../img/bg-back-tablet@2x.jpg);
         }
+        background-size: cover;
         padding-top: 110px;
         
         &_index {
@@ -58,18 +60,20 @@
     .intro__phone {
         justify-content: flex-end;
         
-        img {
+        picture img {
             height: 547px;
+            vertical-align: bottom;
         }
     }
 }
 
 @media @desktop-width {
     .intro {
-        background: url(../img/bg-back-desktop@1x.jpg) no-repeat top;
+        background: url(../img/bg-back-desktop@1x.jpg) no-repeat bottom;
         @media @retina {
             background-image: url(../img/bg-back-desktop@2x.jpg);
         }
+        
         padding-top: 80px;
         
         &_index {
@@ -82,10 +86,12 @@
     }
     
     .intro__phone {
-        padding-right: 40px;
+        margin-left: auto;
         
-        img {
-            height: 644px;
+        picture img{
+            min-width: 100%;
+            height: auto;
+            vertical-align: bottom;
         }
     }
     
