@@ -781,12 +781,8 @@ th {
 }
 @media (min-width: 700px) {
   .intro {
-<<<<<<< HEAD
-    background: url(../img/bg-back-tablet@1x.jpg) no-repeat top;
-=======
     background: url(../img/bg-back-tablet@1x.jpg) no-repeat bottom;
     background-size: cover;
->>>>>>> 14b2eb87202617b0d916af7826d2ee61599744b2
     padding-top: 110px;
   }
   .intro_index {
@@ -820,11 +816,7 @@ th {
 }
 @media (min-width: 1200px) {
   .intro {
-<<<<<<< HEAD
-    background: url(../img/bg-back-desktop@1x.jpg) no-repeat top;
-=======
     background: url(../img/bg-back-desktop@1x.jpg) no-repeat bottom;
->>>>>>> 14b2eb87202617b0d916af7826d2ee61599744b2
     padding-top: 80px;
   }
   .intro_index {
@@ -1564,35 +1556,12 @@ th {
   margin: 0;
   margin-bottom: 20px;
   background-color: #f2f2f2;
-<<<<<<< HEAD
 }
 @media (min-width: 1200px) {
   .photolist__title {
     padding-left: 150px;
     padding-right: 150px;
   }
-}
-.post__wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  background-color: #f2f2f2;
-  padding: 0;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-=======
-}
-@media (min-width: 1200px) {
-  .photolist__title {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
->>>>>>> 14b2eb87202617b0d916af7826d2ee61599744b2
 }
 .post__wrapper {
   display: -ms-flexbox;
